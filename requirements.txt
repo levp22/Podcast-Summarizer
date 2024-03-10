@@ -1,5 +1,4 @@
-openai
-pytube
-youtube-transcript-api
-python-dotenv
-pydub
+openai==1.12.0
+pytube==15.0.0
+youtube-transcript-api==0.6.2
+python-dotenv==0.15.0

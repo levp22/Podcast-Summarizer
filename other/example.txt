@@ -1,0 +1,143 @@
+50 word summary of the podcast
+Key Highlights:
+•	Subject 1
+o	Key thing discussed
+o	Key takeaway from what was discussed 
+o	Key quote
+o	Why this matters?
+•	Subject 2
+o	Key thing discussed
+o	Key takeaway from what was discussed 
+o	Key quote
+o	Why this matters?
+•	Subject 3
+o	Key thing discussed
+o	Key takeaway from what was discussed
+o	Key quote
+o	Why this matters?
+
+•	Subject 4
+o	Key thing discussed
+o	Key takeaway from what was discussed 
+o	Key quote
+o	Why this matters?
+
+•	Subject 5
+o	Key thing discussed
+o	Key takeaway from what was discussed 
+o	Key quote
+o	Why this matters?
+
+Full Notes:
+
+•	Subject 1
+o	Detail discussed 1
+	Sub point 1 of what was discussed
+	Sub point 2 of what was discussed
+	Sub point 3 of what was discussed
+	Key takeaway
+o	Detail discussed 2
+	Sub point 1 of what was discussed
+	Sub point 2 of what was discussed
+	Sub point 3 of what was discussed
+	Key takeaway
+o	Detail discussed 3
+	Sub point 1 of what was discussed
+	Sub point 2 of what was discussed
+	Sub point 3 of what was discussed
+	Key takeaway
+o	Detail discussed 4
+	Sub point 1 of what was discussed
+	Sub point 2 of what was discussed
+	Sub point 3 of what was discussed
+	Key takeaway
+o	Why this subject matters and what we should take away from it
+•	Subject 2
+o	Detail discussed 1
+	Sub point 1 of what was discussed
+	Sub point 2 of what was discussed
+	Sub point 3 of what was discussed
+	Key takeaway
+o	Detail discussed 2
+	Sub point 1 of what was discussed
+	Sub point 2 of what was discussed
+	Sub point 3 of what was discussed
+	Key takeaway
+o	Detail discussed 3
+	Sub point 1 of what was discussed
+	Sub point 2 of what was discussed
+	Sub point 3 of what was discussed
+	Key takeaway
+o	Detail discussed 4
+	Sub point 1 of what was discussed
+	Sub point 2 of what was discussed
+	Sub point 3 of what was discussed
+	Key takeaway
+o	Why this subject matters and what we should take away from it
+•	Subject 3
+o	Detail discussed 1
+	Sub point 1 of what was discussed
+	Sub point 2 of what was discussed
+	Sub point 3 of what was discussed
+	Key takeaway
+o	Detail discussed 2
+	Sub point 1 of what was discussed
+	Sub point 2 of what was discussed
+	Sub point 3 of what was discussed
+	Key takeaway
+o	Detail discussed 3
+	Sub point 1 of what was discussed
+	Sub point 2 of what was discussed
+	Sub point 3 of what was discussed
+	Key takeaway
+o	Detail discussed 4
+	Sub point 1 of what was discussed
+	Sub point 2 of what was discussed
+	Sub point 3 of what was discussed
+	Key takeaway
+o	Why this subject matters and what we should take away from it
+•	Subject 4
+o	Detail discussed 1
+	Sub point 1 of what was discussed
+	Sub point 2 of what was discussed
+	Sub point 3 of what was discussed
+	Key takeaway
+o	Detail discussed 2
+	Sub point 1 of what was discussed
+	Sub point 2 of what was discussed
+	Sub point 3 of what was discussed
+	Key takeaway
+o	Detail discussed 3
+	Sub point 1 of what was discussed
+	Sub point 2 of what was discussed
+	Sub point 3 of what was discussed
+	Key takeaway
+o	Detail discussed 4
+	Sub point 1 of what was discussed
+	Sub point 2 of what was discussed
+	Sub point 3 of what was discussed
+	Key takeaway
+o	Why this subject matters and what we should take away from it
+•	Subject 5
+o	Detail discussed 1
+	Sub point 1 of what was discussed
+	Sub point 2 of what was discussed
+	Sub point 3 of what was discussed
+	Key takeaway
+o	Detail discussed 2
+	Sub point 1 of what was discussed
+	Sub point 2 of what was discussed
+	Sub point 3 of what was discussed
+	Key takeaway
+o	Detail discussed 3
+	Sub point 1 of what was discussed
+	Sub point 2 of what was discussed
+	Sub point 3 of what was discussed
+	Key takeaway
+o	Detail discussed 4
+	Sub point 1 of what was discussed
+	Sub point 2 of what was discussed
+	Sub point 3 of what was discussed
+	Key takeaway
+o	Why this subject matters and what we should take away from it
+

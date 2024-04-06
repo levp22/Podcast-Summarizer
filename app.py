@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from threading import Thread
-from main import create_transcripts_new
+from main import create_transcripts_new, playlist_dealer
 
 app = Flask(__name__)
 CORS(app)
@@ -15,19 +15,28 @@ def add_post():
         print(typed)
     except:
         return 404
+    try: 
+        gpt = post_data.get('GPT', 'No gpt provided')
+        print(gpt)
+    except:
+        return 404
+    try: 
+        source = post_data.get('source', 'No source provided')
+        print(source)
+    except:
+        return 404
     if typed==1:
         link = post_data.get('link', 'no link provided')
         print(link)
-        return_string = create_transcripts_new(link)
+        return_string = create_transcripts_new(link, gpt)
+        post_data["Return String"] = return_string
     else: 
-        return_string = " "
+        post_data["Links"] = playlist_dealer(link, gpt)
     #create_transcripts(typed,0)
     #create_word_documents() 
-    post_data["Return String"] = return_string
     posts.append(post_data)
     print("hello")
     post = jsonify(post_data)
-      
     return post, 201
 
 from werkzeug.serving import run_simple

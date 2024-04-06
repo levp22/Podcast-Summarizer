@@ -239,12 +239,12 @@ def create_key_info(yt):
     else:
         return "Title:" + yt.title  + "\nAuthor: Lev Pollock\nDate: "+ get_todays_date() + "\nChannel: " + yt.author+ "\n"
 
-def create_transcripts_new(link):
+def create_transcripts_new(link,gpt):
     yt = YouTube(link)
     info = create_key_info(yt)
     transcript = create_video_transcripts(yt)
-    summary = create_summaries(transcript, 0)
-    return info + "/n" + summary
+    summary = create_summaries(transcript, gpt)
+    return info + "\n" + summary
 
 def create_transcripts(type, dated):
     video_obj = {}
@@ -323,4 +323,11 @@ def create_transcripts(type, dated):
         create_audio_files()
         print(video_obj)
         create_summaries(video_obj)
+def playlist_dealer(link, gpt):
+    strings = []
+    c = Playlist(link)
+    for video in c.video_urls:
+        strings.append(create_transcripts_new(video, gpt))
+    return strings
+
 

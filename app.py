@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 from threading import Thread
 from main import create_transcripts_new, playlist_dealer
+from podcast import podcast_way
 
 app = Flask(__name__)
 CORS(app)
@@ -25,15 +26,31 @@ def add_post():
         print(source)
     except:
         return 404
-    if typed==1:
-        link = post_data.get('link', 'no link provided')
-        print(link)
-        return_string = create_transcripts_new(link, gpt)
-        post_data["Return String"] = return_string
+    if source == 1 :
+        try:
+            title = post_data.get('title', 'No title provided')
+            print(title)
+            link = post_data.get('link', 'no link provided')
+            print(link)
+            print("hello I am here")
+            return_string = podcast_way(link, title, gpt)
+            print("made here")
+            post_data["Return String"] = return_string
+        except:
+            return 404
     else: 
-        post_data["Links"] = playlist_dealer(link, gpt)
-    #create_transcripts(typed,0)
-    #create_word_documents() 
+        if typed==1:
+            try:
+                link = post_data.get('link', 'no link provided')
+                print(link)
+                return_string = create_transcripts_new(link, gpt)
+                post_data["Return String"] = return_string
+            except:
+                return 404
+        else: 
+            post_data["Links"] = playlist_dealer(link, gpt)
+        #create_transcripts(typed,0)
+        #create_word_documents() 
     posts.append(post_data)
     print("hello")
     post = jsonify(post_data)

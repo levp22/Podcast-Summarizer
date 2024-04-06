@@ -4,20 +4,27 @@ from urllib.parse import unquote
 import subprocess
 import sys
 import os
+from main import create_summaries
 
-def podcast_way(url, name):
+def podcast_way(url, name, gpt):
+    print(url)
 # RSS feed URL'
     response = requests.get(url)
+    print("hello 1")
     response.raise_for_status()
-    os.remove("hello.mp3")
-    os.remove("hello.wav")
+    print("hello 2")
+    if (os.path.exists("hello.mp3")):
+        os.remove("hello.mp3")
+        os.remove("hello.wav")
+    print("sup broski")
     root = ET.fromstring(response.content)
 
     # Initialize variable to keep track of whether the episode was found
     episode_found = False
-
+    print("made here")
     for item in root.findall('./channel/item'):
         title = item.find('title').text
+        print("made here")
         if name.lower() in title.lower():  # Case insensitive search
             audio_url = item.find('enclosure').get('url')
             audio_url = unquote(audio_url)  # Ensure the URL is correctly formatted
@@ -64,6 +71,9 @@ def podcast_way(url, name):
             './main',
             '-f', '../Podcast-Summarizer/hello.wav'
         ], cwd="../whisper.cpp")
+        transcript = result.decode(sys.stdout.encoding).strip()
+        print(transcript)
+        summary = create_summaries(transcript, gpt)
+        return summary
 
-        return result.decode(sys.stdout.encoding).strip()
 
